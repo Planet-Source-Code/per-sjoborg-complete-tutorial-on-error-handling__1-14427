@@ -1,0 +1,93 @@
+:Base Err.hlp
+:Title Error Handling in Visual Basic, By www.puccmultimedia.com
+0 Error Handling In Visual Basic 
+3 Error Handling In Visual Basic =IDH_Introduction
+1 Definitions
+4 Definitions=IDH_Definitions
+2 Error Block=IDH_Error_Block
+2 Error Handler=IDH_Error_Handler
+2 Error Trap=IDH_Error_Trap
+2 Current Error Trap=IDH_Current_Error_Trap
+2 Open Error Trap=IDH_Open_Error_Trap
+2 Persisted Data Integrity=IDH_Persisted_Data_Integrity
+2 Active Error Handler=IDH_Active_Error_Handler
+2 Compile Time Errors=IDH_Compile_Time_Errors
+2 Run Time Errors=IDH_Run_Time_Errors
+2 The VB default Error handling scheme=IDH_VB_DefaultEH
+2 The Error Handler Context=IDH_The_Error_Handler_Context
+2 Regaining the Error Context=IDH_Regaining_the_Error_Context
+2 Top-level Procedure_WP=IDH_TLP_WP
+2 Reference counted toplevel procedures_WP=IDH_RC_TLP_WP
+2 Non toplevel procedures_WP=IDH_Non_TLP_WP
+2 Default Error Processing (DEP)_WP=IDH_DE_Pros_WP
+2 Custom Cases, CC WP=IDH_CC_WP
+2 Error Trapping Configurations=IDH_Error_Trapping_Configurations
+2 Development and Compiled Mode=IDH_Development_and_Compiled_Mode
+2 The Call Stack / Call Chain=IDH_The_Call_Stack
+2 Errors and the VB call stack=IDH_Errors_Call_stack_WP
+2 State Restore (Short)=IDH_State_Restore_Short
+2 No Error Traps=IDH_No_Error_Traps
+1 Cascading the VB call stack
+4 Cascading the VB call stack=IDH_VB_Cascading_CallStack_WP
+1 Error handling In Development Mode=IDH_Error_handling_In_Dev
+1 Error handling In Compiled Mode=IDH_Error_handling_In_Comp
+1 Do's and Don'ts
+4 Do's and Don'ts=IDH_Dos_and_Donts
+2 Do's
+5 Do's=IDH_Dos
+3 Integrate adding error handling in design/development=IDH_Integrate_design_development
+3 Integrate error handling in the code review process=IDH_Integrate_code_review_process
+3 Include a Error system test in the application=IDH_Include_a_Error_system_test_in_the_application
+3 Have an Error Trap in all Procedures=IDH_Trap_in_all_Procedures
+3 Understand Errors before you fix=IDH_Understand_Errors_before_you_fix
+3 Fix Errors carefully=IDH_Fix_Errors_carefully
+3 Trace Call stack=IDH_Trace_Call_stack
+3 Trace Variable Contents=IDH_Trace_Variable_Contents
+3 Implement Variable Snap Shot=IDH_Implement_Variable_Snap_Shot
+3 Document Error Handling carefully=IDH_Document_Error_Handling
+3 Use Line Numbers=IDH_Use_Line_Numbers
+3 Save Line Numbered Code for Debugging=IDH_Save_Line_Numbered_Code_for_Debugging
+3 Use SetUnhandledExceptionFilter=IDH_Use_SetUnhandledExceptionFilter
+3 Use Error Messages with lots of information in them=IDH_Messages_lots_of_information
+3 Use MSinfo32.exe if possible=IDH_Use_MSinfo32.exe_if_possible
+3 Always Gather ALL data=IDH_Always_Gather_ALL_data
+3 Log Information Centrally=IDH_Log_Information_Centrally
+3 Consider Confidential Data in logs=IDH_Consider_Confidential_Data_in_logs
+3 Use VBs Raise Error=IDH_Use_VBs_Raise_Error
+3 Always have error Trap/Handling in error Handlers=IDH_Always_have_error_Handling_in_error_Handlers
+3 Always Have A Sub Main=IDH_Always_Have_A_Sub_Main
+3 Always check your Components availability=IDH_Always_check_your_Components_availability
+3 Try To Let the App Continue=IDH_Try_To_Let_the_App_Continue
+3 Incorporate an Easy and quick way to report error=IDH_Incorporate_an_Easy_and_quick_way_to_report_error
+3 Use a reminder, to get people to report error=IDH_Use_a_reminder,_to_get_people_to_report_error
+3 Defensive Coding=IDH_Defensive_Coding
+3 Allow your error reporting to be configured=IDH_Allow_your_error_reporting_to_be_configured
+3 Consider how your app is supposed to be used =IDH_Consider_how_your_app_is_supposed_to_be_used_
+3 Allow cut and past=IDH_Allow_cut_and_past
+3 Use a dual implementation for error messages=IDH_Use_a_dual_implementation_for_error_messages
+3 In general, have Only One Error Handler in a Procedure=IDH_In_general_have_Only_One_Error_Handler_in_a_Procedure
+3 Full cycle Add/Remove/ReAdd=IDH_Full_cycle_Add_Remove_ReAdd
+3 Reentry protection=IDH_Reentry_protection
+3 On Error Logging=IDH_On_Error_Logging
+3 Store Err Object Attributes Immediately=IDH_Store_Err_Object_Attributes_Immediately
+3 Consider the differences between Client Vs Server=IDH_Consider_the_differences_between_Client_Vs_Server
+2 Don'ts
+5 Don'ts=IDH_Donts
+3 Do not see error handling as some thing to do in the end of a project=IDH_Do_Not_do_in_the_end_of_a_project
+3 Do not wait for VB7=IDH_Do_not_wait_for_VB7
+3 Do not use stupid/Blind error handler=IDH_Do_not_use_stupidBlind_error_handler
+3 Do not send logs with e-mail without prompting the user.=IDH_Do_not_send_logs_with_e-mail_without_prompting_the_user.
+3 Never Raise Errors in Events that can't cascade (Initialize, Sub Main etc)=IDH_Never_Raise_Errors_No_cascade
+3 Do not write fallthrough handlers=IDH_Do_not_write_fallthrough_handlers
+3 Do Not Trace Calls Stack on the way down.=IDH_Do_Not_Trace_Calls_Stack_on_the_way_down.
+3 Never trust the user to tell you what has happened=IDH_Never_trust_the_user_to_tell_you_what_has_happened
+3 Never Use On Error Resume Next Indiscriminately or as a cure all=IDH_Never_Use_On_Error_Resume_Next_as_a_cure_all
+3 Don't Reraise Errors=IDH_Don't_Reraise_Errors
+3 Do not use the API return Approach=IDH_Do_not_use_the_API_return_Approach
+3 Do not trust MSinfo32.exe as the only source of system information=IDH_MSinfo32.exe_as_the_only_source
+3 Do not think a tool can do it all for you=IDH_Do_not_think_a_tool_can_do_it_all_for_you
+1 Regarding recovering state/some general points on this uptime improving technique
+4 Regarding recovering state/some general points on this uptime improving technique=IDH_Regarding_recovering_state
+1 Links_Wp=IDH_Links_WP
+1 Books_WP=IDH_Books_WP
+1 Conclusion On this WP=IDH_Conclusion_On_this_WP
